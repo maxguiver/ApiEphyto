@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soapenv:Envelope>
+  <soapenv:Header/>
+  <soapenv:Body>
+    <eph:DeliverPhytoEnvelope>
+      <eph:ePhytoEnvelope>
+        <hub:From>BO</hub:From>
+        <hub:To>AR</hub:To>
+        <hub:CertificateType>851</hub:CertificateType>
+        <hub:CertificateStatus>70</hub:CertificateStatus>
+        <hub:NPPOCertificateNumber>BO-5845145424</hub:NPPOCertificateNumber>
+        <urn:SPSCertificate>
+          <urn:SPSExchangedDocument>
+            <urn1:Name>NULL</urn1:Name>
+            <urn1:ID>BO-5845145424</urn1:ID>
+            <urn1:TypeCode>851</urn1:TypeCode>
+            <urn1:StatusCode>70</urn1:StatusCode>
+            <urn1:IssueDateTime>
+              <urn2:DateTimeString>2022-01-21T15:49:40</urn2:DateTimeString>
+            </urn1:IssueDateTime>
+            <urn1:IssuerSPSParty>
+              <urn1:Name>Servicio Nacional Agropecuario e Inucuidad Alimentaria</urn1:Name>
+            </urn1:IssuerSPSParty>
+            <urn1:IncludedSPSNote>
+              <urn1:Subject>SPSFL</urn1:Subject>
+              <urn1:Content>5</urn1:Content>
+            </urn1:IncludedSPSNote>
+            <urn1:SignatorySPSAuthentication>
+              <urn1:ActualDateTime>
+                <urn2:DateTimeString>2022-01-21</urn2:DateTimeString>
+              </urn1:ActualDateTime>
+              <urn1:IssueSPSLocation>
+                <urn1:Name>Ciudad Trinidad</urn1:Name>
+              </urn1:IssueSPSLocation>
+              <urn1:ProviderSPSParty>
+                <urn1:Name>NULL</urn1:Name>
+                <urn1:SpecifiedSPSPerson>
+                  <urn1:Name>Jorge Candia</urn1:Name>
+                </urn1:SpecifiedSPSPerson>
+              </urn1:ProviderSPSParty>
+              <urn1:IncludedSPSClause>
+                <urn1:ID>1</urn1:ID>
+                <urn1:Content>NULL</urn1:Content>
+              </urn1:IncludedSPSClause>
+            </urn1:SignatorySPSAuthentication>
+          </urn:SPSExchangedDocument>
+          <urn:SPSConsignment>
+            <urn1:ConsignorSPSParty>
+              <urn1:Name>Moxos Agropecuario</urn1:Name>
+              <urn1:SpecifiedSPSAddress>
+                <urn1:LineOne>Arroyo San Juan</urn1:LineOne>
+              </urn1:SpecifiedSPSAddress>
+            </urn1:ConsignorSPSParty>
+            <urn1:ConsigneeSPSParty>
+              <urn1:Name>Comercial Moxos Agropecuario - Trinidad</urn1:Name>
+              <urn1:SpecifiedSPSAddress>
+                <urn1:LineOne>Avenidad Moxos</urn1:LineOne>
+              </urn1:SpecifiedSPSAddress>
+            </urn1:ConsigneeSPSParty>
+            <urn1:ExportSPSCountry>
+              <urn1:ID>BO</urn1:ID>
+              <urn1:Name>Estado Plurinacional de Bolvia</urn1:Name>
+            </urn1:ExportSPSCountry>
+            <urn1:ImportSPSCountry>
+              <urn1:ID>AR</urn1:ID>
+              <urn1:Name>Republica de Argentina</urn1:Name>
+            </urn1:ImportSPSCountry>
+            <urn1:UnloadingBaseportSPSLocation>
+              <urn1:Name>Positos Argentina</urn1:Name>
+            </urn1:UnloadingBaseportSPSLocation>
+            <urn1:ExaminationSPSEvent>
+              <urn1:OccurrenceSPSLocation>
+                <urn1:Name>NULL</urn1:Name>
+              </urn1:OccurrenceSPSLocation>
+            </urn1:ExaminationSPSEvent>
+            <urn1:MainCarriageSPSTransportMovement>
+              <urn1:ModeCode>3</urn1:ModeCode>
+              <urn1:UsedSPSTransportMeans>
+                <urn1:Name>TRAPORTADORA MOXOS</urn1:Name>
+              </urn1:UsedSPSTransportMeans>
+            </urn1:MainCarriageSPSTransportMovement>
+            <urn1:IncludedSPSConsignmentItem>
+              <urn1:IncludedSPSTradeLineItem>
+                <urn1:SequenceNumeric>0</urn1:SequenceNumeric>
+                <urn1:Description>Agropiro seed</urn1:Description>
+                <urn1:CommonName>tall wheatgrass</urn1:CommonName>
+                <urn1:ScientificName>Elymus elongatus</urn1:ScientificName>
+                <urn1:NetWeightMeasure>200</urn1:NetWeightMeasure>
+                <urn1:AdditionalInformationSPSNote>
+                  <urn1:Subject>ADTLIL</urn1:Subject>
+                  <urn1:Content>The consignment is free from Trifolium repens</urn1:Content>
+                </urn1:AdditionalInformationSPSNote>
+                <urn1:AdditionalInformationSPSNote>
+                  <urn1:Subject>ADDITLIL</urn1:Subject>
+                  <urn1:Content>2021-09-03T00:00:00-03:00</urn1:Content>
+                </urn1:AdditionalInformationSPSNote>
+                <urn1:ApplicableSPSClassification>
+                  <urn1:SystemName>IPPCPCVP</urn1:SystemName>
+                  <urn1:ClassName>Seeds</urn1:ClassName>
+                </urn1:ApplicableSPSClassification>
+                <urn1:PhysicalSPSPackage>
+                  <urn1:LevelCode>1</urn1:LevelCode>
+                  <urn1:TypeCode>BG</urn1:TypeCode>
+                  <urn1:ItemQuantity>200</urn1:ItemQuantity>
+                </urn1:PhysicalSPSPackage>
+                <urn1:OriginSPSCountry>
+                  <urn1:ID>BO</urn1:ID>
+                  <urn1:Name>Estado Plurinacional de Bolivia</urn1:Name>
+                </urn1:OriginSPSCountry>
+              </urn1:IncludedSPSTradeLineItem>
+            </urn1:IncludedSPSConsignmentItem>
+          </urn:SPSConsignment>
+        </urn:SPSCertificate>
+      </eph:ePhytoEnvelope>
+    </eph:DeliverPhytoEnvelope>
+  </soapenv:Body>
+</soapenv:Envelope>
