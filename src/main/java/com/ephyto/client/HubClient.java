@@ -3,6 +3,8 @@ package com.ephyto.client;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
+import com.api.conection.SQLDatabaseConnection;
+
 import _int.ippc.ephyto.DeliveryService;
 import _int.ippc.ephyto.DeliveryServiceLocator;
 import _int.ippc.ephyto.HubWebException;
@@ -20,6 +22,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.rmi.RemoteException;
+import java.sql.Connection;
+import java.sql.Statement;
 
 public class HubClient {
 	
@@ -32,9 +36,10 @@ public class HubClient {
      * */
 
     public static EnvelopeHeader DeliverEnvelope(String from, String to, String type, int status, String certificateNumber, String xml) throws Exception {
-    	System.out.println("PROPIEDADES:");
-    	System.out.println(System.getProperties());
-        IDeliveryService proxy = getClientConnection();
+    	//System.out.println("PROPIEDADES:");
+    	//System.out.println(System.getProperties());
+    	//
+    	IDeliveryService proxy = getClientConnection();
         Envelope envelope = new Envelope();
         envelope.setFrom(from);
         envelope.setTo(to);
@@ -55,8 +60,7 @@ public class HubClient {
         try {
             // send the message to the hub and get back the header
             EnvelopeHeader header = proxy.deliverEnvelope(envelope);
-            // System.out.println("PRUEBA EXITOSA DELIVERY");
-
+            //System.out.println("PRUEBA EXITOSA DELIVERY");
             // Handle internal issues
 
             if (header.getHUBTrackingInfo() != null && header.getHUBTrackingInfo().equals("FailedDelivery")) {
@@ -77,7 +81,6 @@ public class HubClient {
                         "Header delivered with tracking info: %s",
                         header.getHUBTrackingInfo()));
             }
-
             return header;
         } catch (RemoteException e) {
             // manage the exception and provide errors to the client
@@ -86,7 +89,7 @@ public class HubClient {
             // unavailability of the remote system
             // Pudo haber sido por un problema de conextión
             e.printStackTrace();
-            System.out.println("PROPIEDADES");
+          //  System.out.println("PROPIEDADES");
             System.out.println(String.format(
                     "Failed to deliver the message to the HUB. ",
                     e.getMessage()));
@@ -165,8 +168,7 @@ public class HubClient {
                 } catch (ParserConfigurationException | SAXException
                         | IOException e) {
                     // The content of the envelope is not a proper XML file
-                    System.out.println(String.format(
-                            "Error parsing content of %1$s %2$s",
+                    System.out.println(String.format("Error parsing content of %1$s %2$s",
                             envelope.getHubDeliveryNumber(), e.getMessage()));
                     // This envelope won't be acknowledgedacknowledgeEnvelopeReceipt
 
@@ -186,8 +188,7 @@ public class HubClient {
             // in this case the error is due to one of the following
             // network
             // unavailability of the remote system
-            System.out.println(String.format(
-                    "Failed to deliver the message to	the HUB. ",
+            System.out.println(String.format("Failed to deliver the message to	the HUB. ",
                     e.getMessage()));
             throw new Exception(e);
         }
@@ -279,14 +280,10 @@ public class HubClient {
             throws Exception {
         IDeliveryService proxy = getClientConnection();
         try {
-            EnvelopeHeader header = proxy
-                    .getEnvelopeTrackingInfo(hubTrackingNumber);
-            System.out
-                    .println(String.format(
-                            "The envelope %1$s tracking info is %2$s",
+            EnvelopeHeader header = proxy.getEnvelopeTrackingInfo(hubTrackingNumber);
+            System.out.println(String.format("The envelope %1$s tracking info is %2$s",
                             header.getHubDeliveryNumber(),
                             header.getHUBTrackingInfo()));
-
             switch (header.getHUBTrackingInfo()) {
                 case "Delivered":
                     // perform client updates to mark the envelope as delivered
@@ -322,7 +319,7 @@ public class HubClient {
     }
 
     public EnvelopeHeader deliverEnvelope(Envelope env) throws RemoteException, Exception {
-        saveEnvelope(env);
+    	saveEnvelope(env);
         return env;
     }
     private void saveEnvelope(Envelope env) throws HubWebException, RemoteException, ServiceException {

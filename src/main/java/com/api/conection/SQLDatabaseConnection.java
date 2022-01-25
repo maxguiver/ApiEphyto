@@ -68,7 +68,13 @@ public class SQLDatabaseConnection {
 			System.out.println(prueba);
 			Statement select = prueba.createStatement();
 			java.sql.ResultSet result = select.executeQuery("select *from ExpFitosanitario where SolicitudNro = 1 and SolicitudIdDistrital ='SCZ';");
-
+            
+			//Actualiza Respuesta en la base de datos
+           /* Statement selectup = prueba.createStatement();
+    		String sql = "update WsEnvios set Respuesta = 1 where SolicitudNro = 71876 and SolicitudIdDistrital ='SCZ';";
+    		//System.out.print(sql);
+    		selectup.executeQuery(sql);
+    		*/
 		    while (result.next()) {
 		     System.out.println("Numero: " + result.getString(1) + "\n");
 		     System.out.println("Solicitud Distrital: " + result.getString(2) + "\n");
