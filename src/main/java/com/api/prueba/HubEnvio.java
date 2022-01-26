@@ -24,21 +24,15 @@ import com.ephyto.client.UpdateData;
 import _int.ippc.ephyto.HUB_Entities.Envelope;
 
 @Path("/enviar") 
-@Produces(MediaType.APPLICATION_XML) 
+@Produces(MediaType.APPLICATION_JSON) 
 //@Consumes(MediaType.APPLICATION_XML)
 public class HubEnvio {
 	
 	@GET 
     public Response envio() throws Exception {
 		HubClient cliente = new HubClient();
-		
-		UpdateData ud = new UpdateData();
-		
-		Envelope env = (Envelope) cliente.DeliverEnvelope("BO", "PY", "851", 70, "BO-78475445412", "ABC18111111");
-		
-		ud.UpdateWS();
-		
-	    return Response.ok(cliente.deliverEnvelope(env),MediaType.APPLICATION_XML).build();   
+		Envelope env = (Envelope) cliente.DeliverEnvelope("BO", "PY", "851", 70, "BO-784754452", "ABC18111111");
+		return Response.ok(cliente.deliverEnvelope(env),MediaType.APPLICATION_JSON).build();   
     }
 	
 }

@@ -28,6 +28,7 @@ C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\HUB_Entities\EPhy
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\OccurrenceSPSLocation.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\PULLImportEnvelopeResponse.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\SubordinateSPSCountrySubDivision.java
+C:\Proyecto\workspace\ApiEphyto\src\main\java\com\api\prueba\actulaizarWs.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\com\api\xml\Fitosanitario.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\GetProfile.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\HUB_Entities\EnvelopeFrowarding.java
@@ -66,6 +67,7 @@ C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\DeliverPhytoEnvel
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\AcknowledgeFailedEnvelopeReceipt.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\ChannelDirection.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\ChannelRule.java
+C:\Proyecto\workspace\ApiEphyto\src\main\java\com\api\service\ServicesWsEnvios.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\AdvancedAcknowledgeEnvelopeReceiptResponse.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\CompletionSPSPeriod.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_21\ReusableAggregateBusinessInformationEntity\standard\data\uncefact\unece\un\OriginSPSCountry.java
@@ -77,6 +79,7 @@ C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\DeliverEnvelope.j
 C:\Proyecto\workspace\ApiEphyto\src\main\java\com\api\recepcion\RecepcionEphyto.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\AcknowledgeEnvelopeReceiptResponse.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\DeliveryServiceLocator.java
+C:\Proyecto\workspace\ApiEphyto\src\main\java\com\api\entity\VOUsuario.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\com\ephyto\client\pruebaUpdate.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\GetMeanOfTransports.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\com\api\entity\test.java
@@ -106,6 +109,8 @@ C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\PULLImportEnvelop
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_21\ReusableAggregateBusinessInformationEntity\standard\data\uncefact\unece\un\IncludedSPSTradeLineItem.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\Statement.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\AdditionalDeclaration.java
+C:\Proyecto\workspace\ApiEphyto\src\main\java\com\api\entity\WsEnvios.java
+C:\Proyecto\workspace\ApiEphyto\src\main\java\com\api\service\ServicesLogin.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\IssueDateTime.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_21\ReusableAggregateBusinessInformationEntity\standard\data\uncefact\unece\un\PhysicalSPSPackage.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\IdType.java
@@ -116,6 +121,7 @@ C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\PackageType.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\HUB_Entities\Channel.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\com\api\xml\SPSCertificateType.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\DeliverEnvelopeResponse.java
+C:\Proyecto\workspace\ApiEphyto\src\main\java\com\api\DAO\WsEnvioDao.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\GetConditions.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\com\ephyto\client\HubClient.java
 C:\Proyecto\workspace\ApiEphyto\src\main\java\_int\ippc\ephyto\PULLSingleImportEnvelopeResponse.java

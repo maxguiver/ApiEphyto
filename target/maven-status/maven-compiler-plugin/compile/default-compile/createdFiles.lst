@@ -40,6 +40,7 @@ _21\ReusableAggregateBusinessInformationEntity\standard\data\uncefact\unece\un\S
 _int\ippc\ephyto\IDeliveryService.class
 _int\ippc\ephyto\AffixedSPSSeal.class
 _int\ippc\ephyto\CompletionSPSPeriod.class
+com\api\prueba\actulaizarWs.class
 _int\ippc\ephyto\ValidationArea.class
 com\api\xml\Fitosanitario.class
 _int\ippc\ephyto\AdvancedAcknowledgeEnvelopeReceiptResponse.class
@@ -50,6 +51,7 @@ _21\ReusableAggregateBusinessInformationEntity\standard\data\uncefact\unece\un\A
 _int\ippc\ephyto\GetProfile.class
 com\api\xml\Config.class
 _int\ippc\ephyto\SignatorySPSAuthentication.class
+com\api\entity\VOUsuario.class
 com\ephyto\client\UpdateData.class
 _21\ReusableAggregateBusinessInformationEntity\standard\data\uncefact\unece\un\SpsAcknowledgementDocument.class
 _int\ippc\ephyto\GetPackageTypes.class
@@ -80,6 +82,7 @@ _int\ippc\ephyto\ActualDateTime.class
 _21\ReusableAggregateBusinessInformationEntity\standard\data\uncefact\unece\un\IncludedSPSConsignmentItem.class
 _int\ippc\ephyto\SetTrackingInfoUpdate.class
 _int\ippc\ephyto\AcknowledgeEnvelopeReceipt.class
+com\api\service\ServicesLogin.class
 com\api\conection\datos.class
 _21\ReusableAggregateBusinessInformationEntity\standard\data\uncefact\unece\un\IncludedSPSNoteContent.class
 _int\ippc\ephyto\HUB_Entities\HUBTrackingInfo.class
@@ -121,14 +124,17 @@ _21\ReusableAggregateBusinessInformationEntity\standard\data\uncefact\unece\un\E
 _int\ippc\ephyto\SetTrackingInfoUpdateResponse.class
 _int\ippc\ephyto\PULLImportEnvelopeResponse.class
 _int\ippc\ephyto\ValidateAndDeliverEnvelopeResponse.class
+com\api\service\ServicesWsEnvios.class
 _int\ippc\ephyto\CertificateType.class
 _int\ippc\ephyto\ValidatePhytoXML.class
 _int\ippc\ephyto\GetMeanOfTransports.class
 _int\ippc\ephyto\GetUnderDeliveryEnvelopeResponse.class
+com\api\DAO\WsEnvioDao.class
 _int\ippc\ephyto\MeasureType.class
 com\api\prueba\RestApplication.class
 _int\ippc\ephyto\DeliverEnvelopeResponse.class
 _int\ippc\ephyto\HUB_Entities\EnvelopeFrowarding.class
+com\api\entity\WsEnvios.class
 _int\ippc\ephyto\EndDateTime.class
 _int\ippc\ephyto\PULLSingleImportEnvelope.class
 _int\ippc\ephyto\DeliveryServiceLocator.class
